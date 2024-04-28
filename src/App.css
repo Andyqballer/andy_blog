@@ -11,3 +11,7 @@
 .mainShowList:hover .showList {
   display: block;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

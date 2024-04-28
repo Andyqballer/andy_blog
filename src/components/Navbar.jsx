@@ -2,7 +2,7 @@ import { Button, Navbar } from "flowbite-react";
 
 export default function Component() {
   return (
-    <div className="w-full border-b">
+    <div className="w-full border-b fixed bg-white">
             <Navbar fluid rounded className="w-[85%] mx-auto">
             <Navbar.Brand href="https://flowbite-react.com">
                 <div className="w-[40px] h-[40px] mr-4 rounded-full bg-black"></div>
