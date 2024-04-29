@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.showList {
+/* .showList {
   display: none;
 }
 
 .mainShowList:hover .showList {
   display: block;
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;

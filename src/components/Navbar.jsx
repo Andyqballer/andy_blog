@@ -1,6 +1,9 @@
 import { Button, Navbar } from "flowbite-react";
+import { useState } from "react";
 
 export default function Component() {
+    const [showTopic, setShowTopic] = useState(false);
+
   return (
     <div className="w-full border-b fixed bg-white z-[20]">
             <Navbar fluid rounded className="w-[85%] mx-auto">
@@ -9,8 +12,8 @@ export default function Component() {
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Danshevah</span>
             </Navbar.Brand>
             <div className="flex md:order-2 justify-center items-center gap-[1rem]">
-                <div className="mainShowList relative">
-                    <div className="flex justify-start items-center gap-[1rem]">
+                {/* <div className="mainShowList relative">
+                    <div onClick={() => setShowTopic(!showTopic)} className="flex justify-start items-center gap-[1rem]">
                         <div>Topic</div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -18,27 +21,26 @@ export default function Component() {
                             </svg>
                         </div>
                     </div>
-                    <div className="showList w-[300px] absolute top-[2rem] shadow-lg left-[-2rem] bg-white">
+                    <div className={`${showTopic ? 'block' : 'hidden'} w-[300px] absolute top-[2rem] shadow-lg left-[-2rem] bg-white`}>
                         <ul className="w-full text-gray-400 text-left">
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        <li className="w-full border-b py-[0.7rem] px-[2rem]">Project Management</li>  
-                        
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
+                        <li className="w-full border-b py-[0.7rem] px-[2rem] cursor-pointer">Project Management</li>  
                         </ul>
                     </div>
                 </div>
-                <div className="w-[1.5px] h-[1rem] mx-[1rem] bg-gray-400"></div>
-                <div className="pr-[1rem] text-[1.2rem] text-indigo-500">danshevah@support.com</div>
+                <div className="w-[1.5px] h-[1rem] mx-[1rem] bg-gray-400"></div> */}
+                {/* <div className="pr-[1rem] text-[1.2rem] text-indigo-500">danshevah@support.com</div> */}
                 <div className="w-[250px] mr-[1rem] flex justify-center items-center gap-[1rem] border border-gray-300 rounded-[2rem]">
-                    <input className="w-[70%] py-[0.5rem] border-none outline-none" type="search" />
+                    <input className="w-[70%] py-[0.5rem] focus:border-transparent focus:outline-none border-none outline-none" type="search" />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                 </div>
-                <Button>Get started</Button>
+                <Button className="bg-indigo-600 hover:bg-indigo-600">Get started</Button>
                 <Navbar.Toggle />
             </div>
             

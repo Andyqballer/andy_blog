@@ -46,6 +46,8 @@ const ProjectMain = () => {
                 </section>
                 <section className='flex-1 h-full overflow-y-auto'>
                     <div id="introduction" className='w-full text-[1.1rem] text-gray-600'>
+                    <h2 className='pb-[1rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Introduction </h2>
+
                         <p className='pb-[2rem] leading-[1.7rem]'>
                             In today’s fast-paced world, staying on top of our tasks and projects is more crucial than ever. That’s 
                             why we are excited to introduce our latest innovation: a cloud-based task management system designed to 
@@ -60,7 +62,7 @@ const ProjectMain = () => {
                         </div>
                     </div>
                     <div id="key-features" className='w-full pt-[3rem]'>
-                        <h2 className='pb-[2rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Key features </h2>
+                        <h2 className='pb-[1rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Key features </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
                             <div className='pb-[1.5rem]'>
                                 <h3 className='pb-[0.7rem] text-[1.5rem] font-semibold leading-[2rem]'>1.	Centralized Task Management: </h3>
