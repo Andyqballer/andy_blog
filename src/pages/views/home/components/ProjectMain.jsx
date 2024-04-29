@@ -6,11 +6,17 @@ import architecture from '../items/img/architecture.jpeg'
 import todoImg from '../items/img/todo-img.webp'
 
 const ProjectMain = () => {
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
   return (
     <div className='w-full py-[4rem] bg-white'>
         <div className='w-[87%] mx-auto '>
             <div className='w-[80%] max-h-[550px] h-full flex justify-start items-start gap-[5rem] overflow-auto'>
-                <section className='w-[30%] h-full'>
+                <section className='w-[30%] h-full sticky top-0 z-[10]'>
                     <div className='w-full pr-[2rem] flex justify-between items-center border rounded-md'>
                         <input type="text" className='text-[1rem] py-[0.8rem] focus:ring-none  border-none outline-none' placeholder='Search' />
                         <div>
@@ -20,25 +26,26 @@ const ProjectMain = () => {
                         </div>
                     </div>
                     <div className='w-full py-[2rem] '>
-                        <div className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
-                            What is task management?
+                        <div onClick={() => scrollToSection('introduction')} className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
+                            Introduction
+                            
                         </div>
-                        <div className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
-                            What are the benefits of efficient task management?
+                        <div onClick={() => scrollToSection('key-features')} className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
+                            Key features
                         </div>
-                        <div className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
-                            Examples of task management in action
+                        <div onClick={() => scrollToSection('architecture')} className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
+                            Architecture of the system
                         </div>
-                        <div className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
-                            What is the best way to manage tasks?
+                        <div onClick={() => scrollToSection('benefits')} className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
+                            Benefits
                         </div>
-                        <div className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
-                            Why monday.com is your ideal task management solution
+                        <div onClick={() => scrollToSection('conclusion')} className='py-[1rem] text-[1.1rem] hover:text-indigo-600 border-b cursor-pointer'>
+                            Conclusion
                         </div>
                     </div>
                 </section>
-                <section className='flex-1 h-full '>
-                    <div className='w-full text-[1.1rem] text-gray-600'>
+                <section className='flex-1 h-full overflow-y-auto'>
+                    <div id="introduction" className='w-full text-[1.1rem] text-gray-600'>
                         <p className='pb-[2rem] leading-[1.7rem]'>
                             In today’s fast-paced world, staying on top of our tasks and projects is more crucial than ever. That’s 
                             why we are excited to introduce our latest innovation: a cloud-based task management system designed to 
@@ -52,8 +59,8 @@ const ProjectMain = () => {
                             <Button />
                         </div>
                     </div>
-                    <div className='w-full pt-[3rem]'>
-                        <h2 className='pb-[2rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Key features </h2>
+                    <div id="key-features" className='w-full pt-[3rem]'>
+                        <h2 className='pb-[2rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Key features </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
                             <div className='pb-[1.5rem]'>
                                 <h3 className='pb-[0.7rem] text-[1.5rem] font-semibold leading-[2rem]'>1.	Centralized Task Management: </h3>
@@ -92,8 +99,8 @@ const ProjectMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Architecture of the system </h2>
+                    <div id="architecture">
+                        <h2 className='pb-[1rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Architecture of the system </h2>
                         <p className='pb-[2rem] leading-[1.7rem]'>
                             The s diagram depicts a three-tier architecture for a proposed system. This architecture consists of three layers: client app, web app, and microservices.
                         </p>
@@ -122,8 +129,8 @@ const ProjectMain = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='w-full'>
-                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Benefits </h2>
+                    <div id="benefits" className='w-full'>
+                        <h2 className='pb-[1rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Benefits </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
                             <div className='pb-[1.5rem]'>
                                 <h3 className='pb-[0.7rem] text-[1.5rem] font-semibold leading-[2rem]'>1. Increased Productivity </h3>
@@ -145,13 +152,21 @@ const ProjectMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full'>
-                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Conclusion </h2>
+                    <div id="conclusion" className='w-full pb-[2rem]'>
+                        <h2 className='pb-[1rem] text-[1.8rem] font-bold hover:text-indigo-600 leading-[2rem]'>Conclusion </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
                             <p className='pb-[1rem] leading-[1.7rem]'>
                                 Embrace the future of work with our cloud-based task management system. It’s more than just a tool; 
                                 it’s an essential partner in your professional journey. Join us and transform the way you work, one task 
                                 at a time.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <h2 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>Call to Action </h2>
+                        <div className='w-full text-[1.1rem] text-gray-600'>
+                            <p className='pb-[1rem] leading-[1.7rem]'>
+                                Ready to boost your productivity? <span className='text-indigo-600 cursor-pointer'>Sign up</span>  for a free trial today and experience the power of efficient task management!
                             </p>
                         </div>
                     </div>
