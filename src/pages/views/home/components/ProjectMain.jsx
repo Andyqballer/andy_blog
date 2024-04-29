@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../../../../common/Button'
 import task01Img from '../items/img/task-img.webp'
+import flowchart from '../items/img/flowchart.jpeg'
+import architecture from '../items/img/architecture.jpeg'
 import todoImg from '../items/img/todo-img.webp'
 
 const ProjectMain = () => {
@@ -37,146 +39,120 @@ const ProjectMain = () => {
                 </section>
                 <section className='flex-1 h-full '>
                     <div className='w-full text-[1.1rem] text-gray-600'>
-                        <p className='pb-[1rem] leading-[1.7rem]'>
-                            You’ve heard the saying: “If you want something done, ask a busy person.” Why is that? Well, a busy person needs 
-                            to know how to get things done, and done well and on time. They’ve got to have a system. And if you have a lot 
-                            of tasks to get done, you need a system too.
+                        <p className='pb-[2rem] leading-[1.7rem]'>
+                            In today’s fast-paced world, staying on top of our tasks and projects is more crucial than ever. That’s 
+                            why we are excited to introduce our latest innovation: a cloud-based task management system designed to 
+                            streamline workflows and boost productivity for teams and individuals alike.
                         </p>
-                        <p className='pb-[1rem] leading-[1.7rem]'>
-                            Simply jumping into tasks as and when they crop up, or plastering your workspace with more and more 
-                            sticky-note reminders is a recipe for disaster.
-                        </p>
-                        <p className='pb-[1rem] leading-[1.7rem]'>
-                            To work effectively and without burning yourself (or your team) out, you need to develop great task management. 
-                            That way, you can stay on track and know you’re on top of your highest-priority task at any given moment. 
-                            In addition, using a platform like monday.com can make it easier to plan, manage, and track all your team’s 
-                            tasks in one flexible platform. 
-                        </p>
-                        <div className='pt-[1.3rem]'>
+                        <div className='w-[500px] h-[300px] mx-auto'>
+                            <img className='w-full h-full' src={flowchart} alt="" />
+                        </div>
+
+                        <div className='pt-[2rem] w-fit mx-auto'>
                             <Button />
                         </div>
                     </div>
                     <div className='w-full pt-[3rem]'>
-                        <h2 className='pb-[1.5rem] text-[2rem] font-semibold hover:text-indigo-600'>What is task management?</h2>
+                        <h2 className='pb-[2rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Key features </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
-                            <div className='pb-[2rem]'>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[0.7rem] text-[1.5rem] font-semibold leading-[2rem]'>1.	Centralized Task Management: </h3>
                                 <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Task management is the process of planning and completing your tasks in the most effective and 
-                                    efficient way. With task management, you oversee the whole lifespan of your tasks, from conception 
-                                    to completion, so that you achieve your specific goals and objectives.
-                                </p>
-                                <div className='py-[1rem]'>That involves:</div>
-                                <ul className='list-disc'>
-                                    <li className='pb-[0.3rem]'>defining your tasks</li>
-                                    <li className='pb-[0.3rem]'>prioritizing tasks by urgency</li>
-                                    <li className='pb-[0.3rem]'>assigning tasks to other people</li>
-                                    <li className='pb-[0.3rem]'>setting timelines and deadlines</li>
-                                    <li className='pb-[0.3rem]'>making adjustments</li>
-                                    <li className='pb-[0.3rem]'>monitoring progress towards your objectives.</li>
-                                </ul>
-                                <div className='w-[720px] h-[400px]'>
-                                    <img className='w-full h-full' src={task01Img} alt="" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className='pb-[1.5rem] text-[2rem] font-bold leading-[2rem]'>The difference between project management and task management</h3>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    How does task management differ from project management? In general, it’s a matter of scale, scope, 
-                                    and timeframe. Project management deals with the planning, running, and overseeing of an entire project 
-                                    life cycle, with all the complexity of its constituent objectives. Task management, on the other hand, 
-                                    focuses on the more straightforward actions that help you achieve those objectives.
-                                </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    In terms of time, project management covers the whole duration of the project — which could be months 
-                                    or even years. Task management is more focused on what needs to be done here and now — all those daily 
-                                    and weekly actions that lead to short-term goals. Task management, then, is essentially a subset of 
-                                    project management, and effective overall project management relies on great task management.
+                                    Organize all your tasks in one accessible cloud platform. Whether you’re at the office or on the go, 
+                                    access your projects anytime, anywhere.
                                 </p>
                             </div>
-                            <div>
-                                <h3 className='pb-[1.5rem] text-[2rem] font-bold leading-[2rem]'>The difference between workflow management and task management</h3>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>2.	Real-Time Collaboration: </h3>
                                 <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Task management is related to workflow management. However, workflow management is also concerned 
-                                    with the bigger picture — in this case, the end-to-end processes, the dependencies of multiple tasks, 
-                                    and the specific sequence of activities that will lead to objectives.
-                                </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    In terms of time, project management covers the whole duration of the project — which could be months 
-                                    or even years. Task management is more focused on what needs to be done here and now — all those daily 
-                                    and weekly actions that lead to short-term goals. Task management, then, is essentially a subset of 
-                                    project management, and effective overall project management relies on great task management.
+                                    Communicate and collaborate with team members in real time. Our system ensures that everyone is on the 
+                                    same page, reducing miscommunications and increasing efficiency.
                                 </p>
                             </div>
-                            
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>3.	Customizable Workspaces: </h3>
+                                <p className='pb-[1rem] leading-[1.7rem]'>
+                                    Adapt the platform to fit your needs. Customize workflows, integrate third-party apps, and set personal 
+                                    preferences to create a workspace that works for you.
+                                </p>
+                            </div>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>4.	Automated Reminders and Notifications: </h3>
+                                <p className='pb-[1rem] leading-[1.7rem]'>
+                                    Stay ahead of deadlines with automated reminders. Our system sends notifications directly to your devices, ensuring you never 
+                                    miss a beat.
+                                </p>
+                            </div>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>5.	Data Security and Reliability:  </h3>
+                                <p className='pb-[1rem] leading-[1.7rem]'>
+                                    Your data’s security is our top priority. With state-of-the-art encryption and regular backups, your 
+                                    information is safe and always available.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className='w-full pt-[3rem]'>
-                        <h2 className='pb-[1.5rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>What are the benefits of efficient task management?</h2>
+                    <div>
+                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Architecture of the system </h2>
+                        <p className='pb-[2rem] leading-[1.7rem]'>
+                            The s diagram depicts a three-tier architecture for a proposed system. This architecture consists of three layers: client app, web app, and microservices.
+                        </p>
+                        <div className='w-[600px] h-[400px] mx-auto'>
+                            <img className='w-full h-full' src={architecture} alt="" />
+                        </div>
+                        <div className='pt-[2rem] pb-[1rem]'>
+                            <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>1. Client and Web App </h3>
+                            <p className='pb-[1rem] leading-[1.7rem]'>
+                                The client app layer provides a user interface for users to interact with the web app. The web app layer,  communicates with the 
+                                microservices layer through an API gateway. The API gateway acts as an intermediary between the web app and the microservices layer, 
+                                routing requests to the appropriate microservice.
+                            </p>
+                        </div>
+                        <div className='pb-[1.5rem]'>
+                            <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>2. Microservices Layer </h3>
+                            <p className='pb-[1rem] leading-[1.7rem]'>
+                                The microservices layer  is comprised of independent services that are responsible for specific tasks.  In the image, there are 
+                                three microservices depicted: Users Service, Tasks Service, and Billings Service. Each microservice has its own database, 
+                                presumably a MongoDB database.
+                            </p>
+                            <p className='pb-[1rem] leading-[1.7rem]'>
+                                This type of architecture can be beneficial because it is modular and scalable.  Microservices 
+                                can be developed, deployed, and scaled independently. This can make the system more flexible and 
+                                easier to maintain.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Benefits </h2>
                         <div className='w-full text-[1.1rem] text-gray-600'>
-                            <div className='pb-[2rem]'>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[0.7rem] text-[1.5rem] font-semibold leading-[2rem]'>1. Increased Productivity </h3>
                                 <p className='pb-[1rem] leading-[1.7rem]'>
-                                    We’ve all been there: faced with a to-do list of tasks to tick off that just never seems to get done. 
-                                    Worse, we may even experience ‘task paralysis’ — when the number or complexity of our tasks becomes so 
-                                    overwhelming that we don’t know how or where to begin. And so we do nothing, and the work piles up even 
-                                    higher. 
-                                </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Task management is all about avoiding those scenarios. The problem isn’t having too many tasks or not knowing how to do them. 
-                                    It’s more about not having a strategy and a practice for getting them done efficiently. This is where task management comes 
-                                    in. 
-                                </p>
-                                <div className='py-[1rem]'>Let’s take a closer look at the benefits of effective task management.</div>
-                                <div className='w-[720px] h-[400px]'>
-                                    <img className='w-full h-full' src={todoImg} alt="" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className='pb-[1.5rem] text-[2rem] font-bold leading-[2rem]'>1. Task management boosts productivity</h3>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Task management is like solving a puzzle. You examine how items relate to each other, and decide on the most 
-                                    productive order to complete them. When you get it right, individuals and teams are strategic and in sync when 
-                                    dealing with the tasks in their workflows and projects. By involving the whole team in task management, 
-                                    you keep the overall project moving forward more smoothly and productively.
-                                </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Task management can also boost engagement by breaking down workflows into more manageable and quickly 
-                                    achievable chunks, which you can organize more effectively. This avoids the diluted focus of multitasking, 
-                                    as well as distraction, procrastination or unproductive antics (The Office’s Jello stapler, anyone?) 
-                                    Instead, you create a more engaged workforce that is more productive.
-                                </p>
-                                <div className='py-[1rem]'>For more on productivity, check out these productivity apps.</div>
-
-                            </div>
-                            <div>
-                                <h3 className='pb-[1.5rem] text-[2rem] font-bold leading-[2rem]'>2. Task management ensures high-priority tasks get done on time</h3>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Without task management, it’s easy to treat less important tasks with more urgency than they merit, 
-                                    and high-priority tasks can fall by the wayside. Sure, a manager might send out email reminders, but 
-                                    that can just add to the pressure, without guaranteeing that tasks will be done on time.
-                                </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    With task management, you can take a more structured and organized approach to your work, categorizing 
-                                    and prioritizing tasks to allocate time and effort more effectively. Creating dependencies between tasks 
-                                    lets you organize tasks logically and efficiently. With a system in place to set clear priorities and 
-                                    due dates, you can ensure high-priority tasks get the attention they deserve.
+                                    Streamline processes and reduce time spent on managing tasks.
                                 </p>
                             </div>
-                            <div>
-                                <h3 className='pb-[1.5rem] text-[2rem] font-bold leading-[2rem]'>3. Task management gives a better overview of your projects and business</h3>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>2. Enhanced Team Collaboration</h3>
                                 <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Using project management software does more than simply helping teams get more done, and get it 
-                                    done better. It also gives managers and team members a better perspective on the tasks that help 
-                                    move workflows and projects forward.
+                                    Improve communication and collaboration across all levels of your organization.
                                 </p>
-                                <p className='pb-[1rem] leading-[1.7rem]'>
-                                    Tools such as Kanban boards and Gantt charts offer different visualizations of how your tasks 
-                                    fit within your workflows and projects. These can help you track real-time progress, forecast any 
-                                    potential bottlenecks, and give you insights into the progress of tasks and the overall project.
-                                </p>
-                                <div className='pt-[1.3rem]'>
-                                    <Button />
-                                </div>
                             </div>
+                            <div className='pb-[1.5rem]'>
+                                <h3 className='pb-[1rem] text-[1.5rem] font-semibold leading-[2rem]'>3.	Scalability </h3>
+                                <p className='pb-[1rem] leading-[1.7rem]'>
+                                    Our system grows with you. As your team or business expands, our platform adapts to meet your evolving needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <h2 className='pb-[1rem] text-[2rem] font-bold hover:text-indigo-600 leading-[2.3rem]'>Conclusion </h2>
+                        <div className='w-full text-[1.1rem] text-gray-600'>
+                            <p className='pb-[1rem] leading-[1.7rem]'>
+                                Embrace the future of work with our cloud-based task management system. It’s more than just a tool; 
+                                it’s an essential partner in your professional journey. Join us and transform the way you work, one task 
+                                at a time.
+                            </p>
                         </div>
                     </div>
                 </section>

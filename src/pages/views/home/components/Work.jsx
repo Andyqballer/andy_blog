@@ -5,7 +5,10 @@ const Work = () => {
   return (
     <div className='w-full py-[3rem] bg-[#CFCFF9]'>
         <section className='w-[80%] mx-auto flex flex-col justify-center items-center'>
-            <h2 className='pb-[2rem] text-[2.5rem] font-light text-gray-900'>Work <span className='font-semibold text-black'>efficiently</span>  & see results</h2>
+            {/* <h2 className='pb-[2rem] text-[2.5rem] font-light text-gray-900'>Work <span className='font-semibold text-black'>efficiently</span>  & see results</h2> */}
+            <h2 className='pb-[2rem] text-[2.5rem] font-light text-gray-900 text-center'>
+                Elevate Your  <span className='font-semibold text-black'>Productivity</span>  with Our New <span className='font-semibold text-black'>Cloud-Based</span>  Task Management System
+            </h2>
             <div>
                 <Button />
             </div>

@@ -6,7 +6,7 @@ export default function Component() {
             <Navbar fluid rounded className="w-[85%] mx-auto">
             <Navbar.Brand href="https://flowbite-react.com">
                 <div className="w-[40px] h-[40px] mr-4 rounded-full bg-black"></div>
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Andy Blog</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Danshevah</span>
             </Navbar.Brand>
             <div className="flex md:order-2 justify-center items-center gap-[1rem]">
                 <div className="mainShowList relative">
@@ -31,7 +31,7 @@ export default function Component() {
                     </div>
                 </div>
                 <div className="w-[1.5px] h-[1rem] mx-[1rem] bg-gray-400"></div>
-                <div className="pr-[1rem] text-[1.2rem] text-indigo-500">Andyman.com</div>
+                <div className="pr-[1rem] text-[1.2rem] text-indigo-500">danshevah@support.com</div>
                 <div className="w-[250px] mr-[1rem] flex justify-center items-center gap-[1rem] border border-gray-300 rounded-[2rem]">
                     <input className="w-[70%] py-[0.5rem] border-none outline-none" type="search" />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500">

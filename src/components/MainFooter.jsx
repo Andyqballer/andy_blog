@@ -9,13 +9,6 @@ const MainFooter = () => {
             <div className="w-[80%] mx-auto">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                 <div className='flex justify-start items-center gap-[1rem]'>
-                    {/* <Footer.Brand
-                    href="https://flowbite.com"
-                    src="/src/pages/views/home/items/img/hero.jpg"
-                    alt="Flowbite Logo"
-                    name="Flowbite"
-                    className='w-[40px] h-[40px] rounded-full'
-                    /> */}
                     <div className='w-[40px] h-[40px] rounded-full bg-black'></div>
                     <h3 className='text-[1.3rem] font-semibold'>Danshevah</h3>
                 </div>
