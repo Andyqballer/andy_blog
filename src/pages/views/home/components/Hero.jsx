@@ -4,8 +4,8 @@ import HeroImg from '../items/img/hero03.avif'
 
 const Hero = () => {
   return (
-    <section className='w-full h-[480px] border flex items-center'>
-        <div className='w-[45%] h-full py-[5rem] bg-[#ECEFF8]'>
+    <section className='w-full h-[500px] border flex items-center'>
+        <div className='w-[45%] h-full pt-[7rem] pb-[3rem] bg-[#ECEFF8]'>
             <div className='w-[80%] mx-auto px-[1rem]'>
                 <small className='text-[1rem] text-indigo-600'>Project management</small>
                 <h2 className='w-[300px] py-[1rem] text-[2.5rem] leading-[3rem] font-semibold'>A cloud native computing final project .</h2>

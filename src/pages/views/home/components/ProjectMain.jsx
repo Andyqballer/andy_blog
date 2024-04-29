@@ -53,7 +53,7 @@ const ProjectMain = () => {
                             why we are excited to introduce our latest innovation: a cloud-based task management system designed to 
                             streamline workflows and boost productivity for teams and individuals alike.
                         </p>
-                        <div className='w-[500px] h-[300px] mx-auto'>
+                        <div className='w-[650px] h-[400px] mx-auto'>
                             <img className='w-full h-full' src={flowchart} alt="" />
                         </div>
 
